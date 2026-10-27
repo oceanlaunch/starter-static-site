@@ -1,0 +1,70 @@
+:root {
+    --bg: #ffffff;
+    --soft: #f5f7fb;
+    --text: #172033;
+    --muted: #5d6779;
+    --line: #e3e7ef;
+    --accent: #2f6fed;
+    --accent-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0d121c;
+        --soft: #151c2a;
+        --text: #e7eaf1;
+        --muted: #9aa4b5;
+        --line: #273145;
+        --accent: #6f9dff;
+        --accent-text: #0d121c;
+    }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a { color: var(--accent); }
+code { font-size: 0.9em; background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+.top { border-bottom: 1px solid var(--line); }
+.top .row { height: 64px; }
+.brand { color: var(--text); font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 20px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--text); }
+
+.hero { background: linear-gradient(180deg, var(--soft), var(--bg)); padding: 96px 0 72px; }
+.eyebrow { margin: 0 0 8px; color: var(--accent); font-weight: 600; letter-spacing: 0.02em; }
+h1 { margin: 0 0 16px; font-size: clamp(36px, 6vw, 60px); line-height: 1.1; letter-spacing: -0.02em; }
+.lead { max-width: 620px; margin: 0 0 32px; color: var(--muted); font-size: 19px; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: var(--accent-text);
+    font-weight: 600;
+    text-decoration: none;
+}
+.button.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding-top: 56px; padding-bottom: 56px; }
+.features article { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+.features h2 { margin: 0 0 8px; font-size: 20px; }
+.features p { margin: 0; color: var(--muted); }
+
+.contact { padding-bottom: 64px; }
+.contact h2 { margin: 0 0 8px; }
+
+.foot { border-top: 1px solid var(--line); padding-top: 24px; padding-bottom: 40px; color: var(--muted); font-size: 15px; }

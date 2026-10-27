@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My site</title>
+    <meta name="description" content="A static website on OceanLaunch.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+    <div class="wrap row">
+        <a class="brand" href="/">My site</a>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="wrap">
+            <p class="eyebrow">Static website starter</p>
+            <h1>Your site is live.</h1>
+            <p class="lead">This page is plain HTML and CSS, served by nginx on OceanLaunch. Edit <code>index.html</code>,
+                push, and the new version goes live by itself.</p>
+            <div class="actions">
+                <a class="button" href="#features">See what's here</a>
+                <a class="button ghost" href="https://oceanlaunch.cloud/docs/static-sites">Read the docs</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="wrap features">
+        <article>
+            <h2>Fast</h2>
+            <p>No build step and no server code: files go straight to your visitors, with HTTPS included.</p>
+        </article>
+        <article>
+            <h2>Yours to change</h2>
+            <p>Add pages as more <code>.html</code> files, put images in <code>images/</code>, and link them as usual.</p>
+        </article>
+        <article>
+            <h2>Your own domain</h2>
+            <p>Add a domain on the app's <b>Domains</b> tab and point it here. The certificate is made for you.</p>
+        </article>
+    </section>
+
+    <section id="contact" class="wrap contact">
+        <h2>Say hello</h2>
+        <p>Put your email address or links here: <a href="mailto:you@your-domain">you@your-domain</a></p>
+    </section>
+</main>
+
+<footer class="wrap foot">
+    <p>Made with the OceanLaunch static website starter.</p>
+</footer>
+</body>
+</html>
