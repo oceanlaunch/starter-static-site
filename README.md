@@ -11,7 +11,7 @@ Add pages as more `.html` files and link them, for example `about.html` at `/abo
 ## Deploy it
 
 In the OceanLaunch portal, open **Templates** and choose **Static website**. Your site is live at its
-`*.apps.oceanlaunch.cloud` address within a minute or two.
+`*.oceanlaunch.app` address within a minute or two.
 
 ## Make it yours
 
